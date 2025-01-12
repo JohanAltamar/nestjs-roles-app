@@ -1,12 +1,15 @@
 {
-  "name": "nestjs-roles-app",
-  "version": "0.0.1",
+  "name": "nestjs-roles-app-2",
+  "version": "0.0.2",
   "description": "",
   "author": "",
   "private": false,
   "license": "UNLICENSED",
   "repository": {
     "url": "git+https://github.com/JohanAltamar/nestjs-roles-app.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "rimraf packages && concurrently \"tsc -p .libs/roles-module/tsconfig.lib.json\"",
