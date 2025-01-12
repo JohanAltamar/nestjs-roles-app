@@ -70,8 +70,7 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@karibeLabs/karibe-labs-modules(|/.*)$": "<rootDir>/libs/karibe-labs-modules/src/$1",
-      "^@app/roles-module(|/.*)$": "<rootDir>/libs/roles-module/src/$1"
+      "^@karibeLabs/roles-module(|/.*)$": "<rootDir>/libs/roles-module/src/$1"
     }
   }
 }

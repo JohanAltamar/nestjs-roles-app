@@ -17,6 +17,13 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@karibeLabs/roles-module": [
+        "libs/roles-module/src"
+      ],
+      "@karibeLabs/roles-module/*": [
+        "libs/roles-module/src/*"
+      ]
+    }
   }
 }

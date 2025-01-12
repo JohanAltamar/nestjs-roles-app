@@ -6,5 +6,16 @@
     "deleteOutDir": true,
     "webpack": true
   },
-  "projects": {}
+  "defaultLibraryPrefix": "@karibeLabs",
+  "projects": {
+    "roles-module": {
+      "type": "library",
+      "root": "libs/roles-module",
+      "entryFile": "index",
+      "sourceRoot": "libs/roles-module/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/roles-module/tsconfig.lib.json"
+      }
+    }
+  }
 }
