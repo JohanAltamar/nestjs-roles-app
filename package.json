@@ -1,12 +1,15 @@
 {
-  "name": "roles-app",
+  "name": "nestjs-roles-app",
   "version": "0.0.1",
   "description": "",
   "author": "",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
+  "repository": {
+    "url": "git+https://github.com/JohanAltamar/nestjs-roles-app.git"
+  },
   "scripts": {
-    "build": "nest build",
+    "build": "rimraf packages && concurrently \"tsc -p .libs/roles-module/tsconfig.lib.json\"",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -23,7 +26,9 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "concurrently": "^9.1.2",
     "reflect-metadata": "^0.2.0",
+    "rimraf": "^6.0.1",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
