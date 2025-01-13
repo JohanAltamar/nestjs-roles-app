@@ -6,19 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RolesModuleModule = void 0;
+exports.RolesModule = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const roles_service_1 = require("./roles.service");
 const entities_1 = require("./entities");
-let RolesModuleModule = class RolesModuleModule {
+let RolesModule = class RolesModule {
 };
-exports.RolesModuleModule = RolesModuleModule;
-exports.RolesModuleModule = RolesModuleModule = __decorate([
+exports.RolesModule = RolesModule;
+exports.RolesModule = RolesModule = __decorate([
     (0, common_1.Module)({
         imports: [typeorm_1.TypeOrmModule.forFeature([entities_1.Role])],
         providers: [roles_service_1.RolesService],
         exports: [roles_service_1.RolesService],
     })
-], RolesModuleModule);
+], RolesModule);
 //# sourceMappingURL=roles.module.js.map

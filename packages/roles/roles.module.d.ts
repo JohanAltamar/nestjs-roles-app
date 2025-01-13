@@ -1,2 +1,2 @@
-export declare class RolesModuleModule {
+export declare class RolesModule {
 }
