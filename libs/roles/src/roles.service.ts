@@ -12,7 +12,7 @@ import { CreateRoleDto } from './dto';
 import { Role } from './entities';
 
 @Injectable()
-export class RolesModuleService {
+export class RolesService {
   private readonly logger = new Logger('RoleService');
 
   constructor(

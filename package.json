@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-roles-app-2",
-  "version": "0.0.5",
+  "name": "karibe-labs",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "private": false,
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/JohanAltamar/nestjs-roles-app.git"
   },
   "scripts": {
-    "build": "rimraf packages && concurrently \"tsc -p ./libs/roles-module/tsconfig.lib.json\"",
+    "build": "rimraf packages && concurrently \"tsc -p ./libs/roles/tsconfig.lib.json\"",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -81,7 +81,7 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@karibeLabs/roles-module(|/.*)$": "<rootDir>/libs/roles-module/src/$1"
+      "^@karibeLabs/roles(|/.*)$": "<rootDir>/libs/roles/src/$1"
     }
   }
 }

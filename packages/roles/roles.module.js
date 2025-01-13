@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RolesModuleModule = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
-const roles_module_service_1 = require("./roles-module.service");
+const roles_service_1 = require("./roles.service");
 const entities_1 = require("./entities");
 let RolesModuleModule = class RolesModuleModule {
 };
@@ -17,8 +17,8 @@ exports.RolesModuleModule = RolesModuleModule;
 exports.RolesModuleModule = RolesModuleModule = __decorate([
     (0, common_1.Module)({
         imports: [typeorm_1.TypeOrmModule.forFeature([entities_1.Role])],
-        providers: [roles_module_service_1.RolesModuleService],
-        exports: [roles_module_service_1.RolesModuleService],
+        providers: [roles_service_1.RolesService],
+        exports: [roles_service_1.RolesService],
     })
 ], RolesModuleModule);
-//# sourceMappingURL=roles-module.module.js.map
+//# sourceMappingURL=roles.module.js.map

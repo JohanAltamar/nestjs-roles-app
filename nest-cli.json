@@ -8,13 +8,13 @@
   },
   "defaultLibraryPrefix": "@karibeLabs",
   "projects": {
-    "roles-module": {
+    "roles": {
       "type": "library",
-      "root": "libs/roles-module",
+      "root": "libs/roles",
       "entryFile": "index",
-      "sourceRoot": "libs/roles-module/src",
+      "sourceRoot": "libs/roles/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/roles-module/tsconfig.lib.json"
+        "tsConfigPath": "libs/roles/tsconfig.lib.json"
       }
     }
   }
