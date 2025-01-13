@@ -12,7 +12,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "rimraf packages && concurrently \"tsc -p .libs/roles-module/tsconfig.lib.json\"",
+    "build": "rimraf packages && concurrently \"tsc -p ./libs/roles-module/tsconfig.lib.json\"",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
